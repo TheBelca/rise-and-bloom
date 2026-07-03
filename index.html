@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rise &amp; Bloom — Botany, taught beautifully.</title>
+  <meta name="description" content="Illustrated plant lessons for the endlessly curious — where every leaf gets its Latin name, and every lesson becomes a work of art you can hold." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=EB+Garamond:ital,wght@0,400..600;1,400..500&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%8C%BF%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+  <header class="site-nav" id="siteNav">
+    <div class="nav-inner">
+      <a href="#top" class="wordmark" aria-label="Rise and Bloom, home">
+        <span class="wordmark-rise">Rise</span><span class="wordmark-amp">&amp;</span><span class="wordmark-bloom">Bloom</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#lessons">Lessons</a>
+        <a href="#printshop">Print shop</a>
+        <a href="#about">About</a>
+        <a href="#greenhouse" class="nav-cta">Greenhouse</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ═══════════════════ HERO ═══════════════════ -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Field Notes · Est. 2026</p>
+          <h1 class="hero-title">Botany,<br /><em>taught beautifully.</em></h1>
+          <p class="hero-lede">
+            Illustrated plant lessons for the endlessly curious — where every leaf
+            gets its Latin name, and every lesson becomes a work of art you can hold.
+          </p>
+          <div class="hero-actions">
+            <a href="#lessons" class="btn btn-primary">Start with a lesson</a>
+            <a href="#greenhouse" class="btn btn-ghost">Join the Greenhouse</a>
+          </div>
+          <div class="hero-meta">
+            <span class="seal-mini" aria-hidden="true">
+              <svg viewBox="0 0 40 40"><use href="#seal-mark" /></svg>
+            </span>
+            <span>Rise &amp; Bloom — a studio in the making. Lessons, then art, then a book.</span>
+          </div>
+        </div>
+
+        <figure class="hero-plate reveal">
+          <div class="plate-frame">
+            <span class="plate-corner tl"></span><span class="plate-corner tr"></span>
+            <span class="plate-corner bl"></span><span class="plate-corner br"></span>
+            <p class="plate-label plate-label-top">Plate I — <em>Flos matutinus</em></p>
+
+            <!-- ── Botanical illustration: flowering morning-glory stem ── -->
+            <svg class="botanical botanical--hero" viewBox="0 0 240 320" role="img" aria-label="Illustrated plate of a flowering morning-glory stem">
+              <g class="ink" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <!-- main stem -->
+                <path d="M126,300 C120,250 132,210 122,168 C114,132 128,100 120,68" />
+                <!-- tendril -->
+                <path d="M122,168 C150,160 168,176 160,196 C154,210 138,206 142,192 C144,184 152,186 150,192" stroke-width="1.1"/>
+                <!-- lower leaf (left) -->
+                <g transform="translate(122,238) rotate(-34)">
+                  <path d="M0,0 C-30,-16 -42,-52 -30,-92 C-6,-70 12,-40 0,0 Z" />
+                  <path d="M0,0 C-14,-30 -22,-58 -30,-92" stroke-width="1"/>
+                  <path d="M-8,-22 -22,-30 M-12,-42 -26,-52 M-14,-62 -25,-74" stroke-width="0.8"/>
+                </g>
+                <!-- upper leaf (right) -->
+                <g transform="translate(120,150) rotate(38)">
+                  <path d="M0,0 C28,-14 40,-46 30,-84 C6,-64 -10,-36 0,0 Z" />
+                  <path d="M0,0 C12,-26 20,-52 30,-84" stroke-width="1"/>
+                  <path d="M8,-20 20,-26 M11,-40 24,-48 M12,-60 23,-70" stroke-width="0.8"/>
+                </g>
+                <!-- bud -->
+                <g transform="translate(150,86) rotate(30)">
+                  <path d="M0,0 C-8,-14 -8,-30 0,-40 C8,-30 8,-14 0,0 Z" />
+                  <path d="M0,-6 0,-34" stroke-width="0.8"/>
+                </g>
+                <!-- open bloom (5-petal trumpet) at top -->
+                <g transform="translate(112,56)">
+                  <g class="bloom-petals">
+                    <g transform="rotate(0 0 0)"><path d="M0,0 C-15,-12 -15,-34 0,-46 C15,-34 15,-12 0,0 Z" /></g>
+                    <g transform="rotate(72 0 0)"><path d="M0,0 C-15,-12 -15,-34 0,-46 C15,-34 15,-12 0,0 Z" /></g>
+                    <g transform="rotate(144 0 0)"><path d="M0,0 C-15,-12 -15,-34 0,-46 C15,-34 15,-12 0,0 Z" /></g>
+                    <g transform="rotate(216 0 0)"><path d="M0,0 C-15,-12 -15,-34 0,-46 C15,-34 15,-12 0,0 Z" /></g>
+                    <g transform="rotate(288 0 0)"><path d="M0,0 C-15,-12 -15,-34 0,-46 C15,-34 15,-12 0,0 Z" /></g>
+                  </g>
+                  <circle cx="0" cy="0" r="7" />
+                  <circle cx="0" cy="0" r="1.4" fill="currentColor" stroke="none"/>
+                  <circle cx="-3" cy="-2" r="1" fill="currentColor" stroke="none"/>
+                  <circle cx="3" cy="-2" r="1" fill="currentColor" stroke="none"/>
+                  <circle cx="0" cy="3" r="1" fill="currentColor" stroke="none"/>
+                </g>
+              </g>
+            </svg>
+            <p class="plate-label plate-label-bottom"><span class="fig">Fig. 1</span> · Rise &amp; Bloom</p>
+          </div>
+        </figure>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Botany</span><span class="dot">·</span><span>Illustration</span><span class="dot">·</span><span>Education</span><span class="dot">·</span><span>Slow Living</span><span class="dot">·</span><span>Field Notes</span><span class="dot">·</span>
+          <span>Botany</span><span class="dot">·</span><span>Illustration</span><span class="dot">·</span><span>Education</span><span class="dot">·</span><span>Slow Living</span><span class="dot">·</span><span>Field Notes</span><span class="dot">·</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ THE LESSON ARCHIVE ═══════════════════ -->
+    <section class="section section--lessons" id="lessons">
+      <div class="section-head reveal">
+        <p class="eyebrow">The Lesson Archive</p>
+        <h2 class="section-title">Short, illustrated plant lessons — <em>rigor you can frame.</em></h2>
+        <p class="section-lede">
+          Each lesson is researched like a field guide and drawn like an heirloom.
+          Five minutes to read; a lifetime of noticing plants differently.
+        </p>
+      </div>
+
+      <div class="lesson-grid">
+
+        <!-- PLATE II -->
+        <article class="lesson-card reveal">
+          <div class="lesson-plate">
+            <span class="plate-corner tl"></span><span class="plate-corner tr"></span>
+            <span class="plate-corner bl"></span><span class="plate-corner br"></span>
+            <span class="plate-tag">Plate II · Morphologia</span>
+            <svg class="botanical" viewBox="0 0 200 220" role="img" aria-label="Leaves arranged in a spiral around a stem">
+              <g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M100,206 C96,160 104,120 100,74 C98,52 102,34 100,20" />
+                <!-- alternating spiral leaves -->
+                <g transform="translate(100,178) rotate(-46)"><path d="M0,0 C-24,-8 -34,-34 -26,-62 C-6,-46 8,-26 0,0 Z"/><path d="M0,0 C-10,-20 -18,-40 -26,-62" stroke-width="0.8"/></g>
+                <g transform="translate(100,150) rotate(50)"><path d="M0,0 C24,-8 34,-34 26,-62 C6,-46 -8,-26 0,0 Z"/><path d="M0,0 C10,-20 18,-40 26,-62" stroke-width="0.8"/></g>
+                <g transform="translate(100,116) rotate(-40)"><path d="M0,0 C-22,-7 -30,-30 -22,-54 C-4,-40 8,-22 0,0 Z"/><path d="M0,0 C-9,-18 -15,-36 -22,-54" stroke-width="0.8"/></g>
+                <g transform="translate(100,84) rotate(44)"><path d="M0,0 C20,-6 28,-28 20,-50 C4,-37 -7,-20 0,0 Z"/><path d="M0,0 C8,-16 13,-33 20,-50" stroke-width="0.8"/></g>
+                <!-- spiral diagram -->
+                <path d="M100,44 m0,0 a6,6 0 1 1 -0.1,0 M100,44 a12,10 0 1 1 -0.1,0 a18,15 0 1 1 -0.1,0" stroke-width="0.7" opacity="0.7"/>
+              </g>
+            </svg>
+          </div>
+          <div class="lesson-body">
+            <p class="lesson-kicker">Lesson · 5 min read</p>
+            <h3 class="lesson-title">Why leaves argue with the sun</h3>
+            <p class="lesson-desc">Phyllotaxy, the spiral mathematics of leaf arrangement — and why your pothos climbs the way it does.</p>
+            <a href="#greenhouse" class="lesson-link">Read the plate <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <!-- PLATE III -->
+        <article class="lesson-card reveal">
+          <div class="lesson-plate">
+            <span class="plate-corner tl"></span><span class="plate-corner tr"></span>
+            <span class="plate-corner bl"></span><span class="plate-corner br"></span>
+            <span class="plate-tag">Plate III · Radices</span>
+            <svg class="botanical" viewBox="0 0 200 220" role="img" aria-label="A plant with a branching root system and fungal nodules underground">
+              <g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+                <!-- soil line -->
+                <path d="M20,104 H180" stroke-width="0.7" stroke-dasharray="1 5" opacity="0.7"/>
+                <!-- shoot -->
+                <path d="M100,104 C98,86 102,72 100,54"/>
+                <g transform="translate(100,74) rotate(42)"><path d="M0,0 C18,-6 24,-24 16,-42 C4,-30 -6,-16 0,0 Z"/></g>
+                <g transform="translate(100,64) rotate(-40)"><path d="M0,0 C-16,-5 -22,-22 -14,-38 C-3,-27 6,-15 0,0 Z"/></g>
+                <!-- taproot + laterals -->
+                <path d="M100,104 C102,132 96,150 100,178 C101,190 99,198 100,206"/>
+                <path d="M100,120 C78,128 62,140 48,160 M100,120 C120,128 138,142 150,164" stroke-width="1"/>
+                <path d="M100,146 C84,152 72,164 62,182 M100,150 C118,158 130,170 140,188" stroke-width="0.9"/>
+                <path d="M100,176 C90,184 84,192 80,202 M100,180 C110,188 116,194 120,204" stroke-width="0.8"/>
+                <!-- mycorrhizal nodules -->
+                <circle cx="48" cy="160" r="2.4"/><circle cx="150" cy="164" r="2.4"/>
+                <circle cx="62" cy="182" r="1.8"/><circle cx="140" cy="188" r="1.8"/>
+                <circle cx="80" cy="202" r="1.6"/><circle cx="120" cy="204" r="1.6"/>
+              </g>
+            </svg>
+          </div>
+          <div class="lesson-body">
+            <p class="lesson-kicker">Lesson · 6 min read</p>
+            <h3 class="lesson-title">The quiet economy of roots</h3>
+            <p class="lesson-desc">How root systems trade sugar for minerals with fungi underground — nature's oldest marketplace, illustrated.</p>
+            <a href="#greenhouse" class="lesson-link">Read the plate <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <!-- PLATE IV -->
+        <article class="lesson-card reveal">
+          <div class="lesson-plate">
+            <span class="plate-corner tl"></span><span class="plate-corner tr"></span>
+            <span class="plate-corner bl"></span><span class="plate-corner br"></span>
+            <span class="plate-tag">Plate IV · Florescentia</span>
+            <svg class="botanical" viewBox="0 0 200 220" role="img" aria-label="A single open flower showing petals and stamens">
+              <g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M100,206 C97,176 103,150 100,124"/>
+                <g transform="translate(78,168) rotate(-46)"><path d="M0,0 C-18,-6 -24,-24 -16,-42 C-4,-30 6,-16 0,0 Z"/></g>
+                <!-- bloom -->
+                <g transform="translate(100,96)">
+                  <g>
+                    <g transform="rotate(0 0 0)"><path d="M0,0 C-19,-14 -19,-44 0,-58 C19,-44 19,-14 0,0 Z"/></g>
+                    <g transform="rotate(60 0 0)"><path d="M0,0 C-19,-14 -19,-44 0,-58 C19,-44 19,-14 0,0 Z"/></g>
+                    <g transform="rotate(120 0 0)"><path d="M0,0 C-19,-14 -19,-44 0,-58 C19,-44 19,-14 0,0 Z"/></g>
+                    <g transform="rotate(180 0 0)"><path d="M0,0 C-19,-14 -19,-44 0,-58 C19,-44 19,-14 0,0 Z"/></g>
+                    <g transform="rotate(240 0 0)"><path d="M0,0 C-19,-14 -19,-44 0,-58 C19,-44 19,-14 0,0 Z"/></g>
+                    <g transform="rotate(300 0 0)"><path d="M0,0 C-19,-14 -19,-44 0,-58 C19,-44 19,-14 0,0 Z"/></g>
+                  </g>
+                  <!-- stamens -->
+                  <g stroke-width="1">
+                    <path d="M0,0 -8,-16"/><circle cx="-8" cy="-17" r="1.6"/>
+                    <path d="M0,0 0,-18"/><circle cx="0" cy="-19" r="1.6"/>
+                    <path d="M0,0 8,-16"/><circle cx="8" cy="-17" r="1.6"/>
+                    <path d="M0,0 -5,-9"/><circle cx="-5" cy="-10" r="1.4"/>
+                    <path d="M0,0 5,-9"/><circle cx="5" cy="-10" r="1.4"/>
+                  </g>
+                  <circle cx="0" cy="0" r="6"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <div class="lesson-body">
+            <p class="lesson-kicker">Lesson · 5 min read</p>
+            <h3 class="lesson-title">A flower is a strategy</h3>
+            <p class="lesson-desc">Petal color, scent, and shape decoded as advertising — what each bloom is really saying, and to whom.</p>
+            <a href="#greenhouse" class="lesson-link">Read the plate <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════ THE PRINT SHOP ═══════════════════ -->
+    <section class="section section--shop" id="printshop">
+      <div class="section-head reveal">
+        <p class="eyebrow">The Print Shop</p>
+        <h2 class="section-title">Every lesson becomes art. <em>Every print teaches something.</em></h2>
+        <p class="section-lede">
+          Original botanical illustrations from the lesson archive — as prints, stationery,
+          and wearable pieces. Sealed and numbered, like specimens worth keeping.
+        </p>
+      </div>
+
+      <div class="shop-grid">
+
+        <article class="shop-card reveal">
+          <div class="shop-art">
+            <svg viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="30" y="18" width="60" height="84" rx="1"/>
+              <path d="M60,92 C58,74 62,58 60,42"/>
+              <g transform="translate(60,44)"><g transform="rotate(0 0 0)"><path d="M0,0 C-9,-7 -9,-20 0,-26 C9,-20 9,-7 0,0 Z"/></g><g transform="rotate(90 0 0)"><path d="M0,0 C-9,-7 -9,-20 0,-26 C9,-20 9,-7 0,0 Z"/></g><g transform="rotate(180 0 0)"><path d="M0,0 C-9,-7 -9,-20 0,-26 C9,-20 9,-7 0,0 Z"/></g><g transform="rotate(270 0 0)"><path d="M0,0 C-9,-7 -9,-20 0,-26 C9,-20 9,-7 0,0 Z"/></g><circle cx="0" cy="0" r="3.5"/></g>
+              <g transform="translate(50,80) rotate(-40)"><path d="M0,0 C-10,-4 -14,-14 -9,-24 C-2,-17 4,-9 0,0 Z"/></g>
+            </g></svg>
+          </div>
+          <div class="shop-body">
+            <p class="shop-status status-first">First Edition · Coming Soon</p>
+            <h3 class="shop-title">Archival prints</h3>
+            <p class="shop-desc">Museum-grade giclée prints of each plate, numbered and stamped with the Rise &amp; Bloom seal.</p>
+          </div>
+        </article>
+
+        <article class="shop-card reveal">
+          <div class="shop-art">
+            <svg viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="20" y="40" width="58" height="42" rx="2" transform="rotate(-8 49 61)"/>
+              <rect x="42" y="34" width="58" height="42" rx="2" transform="rotate(6 71 55)"/>
+              <g transform="translate(71,55)"><path d="M0,14 C-2,4 2,-4 0,-14" stroke-width="1"/><g transform="translate(0,-6) rotate(30)"><path d="M0,0 C7,-3 9,-11 5,-18 C1,-12 -4,-6 0,0 Z"/></g><g transform="translate(0,-2) rotate(-34)"><path d="M0,0 C-7,-3 -9,-11 -5,-18 C-1,-12 4,-6 0,0 Z"/></g></g>
+            </g></svg>
+          </div>
+          <div class="shop-body">
+            <p class="shop-status">Coming Soon</p>
+            <h3 class="shop-title">Stationery &amp; cards</h3>
+            <p class="shop-desc">Notecards, bookmarks, and letter sets — botanical plates sized for the everyday ritual of writing.</p>
+          </div>
+        </article>
+
+        <article class="shop-card reveal">
+          <div class="shop-art">
+            <svg viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M60,26 C48,20 34,20 24,24 V92 C34,88 48,88 60,94 C72,88 86,88 96,92 V24 C86,20 72,20 60,26 Z"/>
+              <path d="M60,26 V94"/>
+              <g transform="translate(42,62)"><path d="M0,10 C-1,2 1,-4 0,-12" stroke-width="0.9"/><g transform="translate(0,-4) rotate(-28)"><path d="M0,0 C-6,-2 -8,-9 -4,-15 C-1,-9 3,-5 0,0 Z"/></g><g transform="translate(0,-1) rotate(30)"><path d="M0,0 C6,-2 8,-9 4,-15 C1,-9 -3,-5 0,0 Z"/></g></g>
+            </g></svg>
+          </div>
+          <div class="shop-body">
+            <p class="shop-status">In the Works</p>
+            <h3 class="shop-title">The field book</h3>
+            <p class="shop-desc">A fully illustrated volume of the lesson archive — the long-term project everything here is growing toward.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════ ABOUT ═══════════════════ -->
+    <section class="section section--about" id="about">
+      <div class="about-grid">
+        <div class="about-seal reveal" aria-hidden="true">
+          <svg viewBox="0 0 220 220">
+            <defs>
+              <path id="sealCircle" d="M110,110 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" />
+            </defs>
+            <circle cx="110" cy="110" r="98" fill="none" stroke="currentColor" stroke-width="1"/>
+            <circle cx="110" cy="110" r="86" fill="none" stroke="currentColor" stroke-width="0.6"/>
+            <text class="seal-text" font-size="11" letter-spacing="4" fill="currentColor">
+              <textPath href="#sealCircle" startOffset="0">RISE &amp; BLOOM · BOTANY · ART · EDUCATION · </textPath>
+            </text>
+            <g transform="translate(110,110)" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M0,44 C-3,20 3,-4 0,-28"/>
+              <g transform="translate(0,-22)"><g transform="rotate(0 0 0)"><path d="M0,0 C-11,-8 -11,-26 0,-34 C11,-26 11,-8 0,0 Z"/></g><g transform="rotate(72 0 0)"><path d="M0,0 C-11,-8 -11,-26 0,-34 C11,-26 11,-8 0,0 Z"/></g><g transform="rotate(144 0 0)"><path d="M0,0 C-11,-8 -11,-26 0,-34 C11,-26 11,-8 0,0 Z"/></g><g transform="rotate(216 0 0)"><path d="M0,0 C-11,-8 -11,-26 0,-34 C11,-26 11,-8 0,0 Z"/></g><g transform="rotate(288 0 0)"><path d="M0,0 C-11,-8 -11,-26 0,-34 C11,-26 11,-8 0,0 Z"/></g><circle cx="0" cy="0" r="5"/></g>
+              <g transform="translate(-16,20) rotate(-38)"><path d="M0,0 C-13,-5 -18,-18 -12,-32 C-3,-23 5,-12 0,0 Z"/></g>
+              <g transform="translate(16,26) rotate(40)"><path d="M0,0 C13,-5 18,-18 12,-32 C3,-23 -5,-12 0,0 Z"/></g>
+            </g>
+          </svg>
+        </div>
+
+        <div class="about-copy reveal">
+          <p class="eyebrow">A Welcoming Expert</p>
+          <h2 class="section-title">Made by an educator who draws, <em>for people who love to learn.</em></h2>
+          <p class="about-text">
+            Rise &amp; Bloom began as a simple habit: turning plant science into small
+            illustrated lessons, careful enough to trust and lovely enough to keep. It grew
+            from a classroom instinct — the best learning feels like a gift, not a lecture.
+          </p>
+          <p class="about-text">
+            Today it's a studio in the making: lessons first, then art and objects that carry
+            them, and one day a book and a community of fellow cultivators. Curated, unhurried,
+            and sealed with intention.
+          </p>
+          <ul class="tag-list">
+            <li>Botany</li>
+            <li>Education</li>
+            <li>Art</li>
+            <li>Food &amp; Plants</li>
+            <li>Slow Living</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ THE GREENHOUSE ═══════════════════ -->
+    <section class="section section--greenhouse" id="greenhouse">
+      <div class="greenhouse-panel reveal">
+        <span class="plate-corner tl"></span><span class="plate-corner tr"></span>
+        <span class="plate-corner bl"></span><span class="plate-corner br"></span>
+        <p class="eyebrow eyebrow--light">The Greenhouse</p>
+        <h2 class="greenhouse-title">We rise and bloom <em>together.</em></h2>
+        <p class="greenhouse-lede">
+          A short letter, a few times a month: one illustrated lesson, one thing blooming in
+          the studio, and first access when prints go live. The seedbed of the future
+          <span class="nowrap">We.RiseAndBloom</span> community.
+        </p>
+
+        <form class="signup" id="signupForm" novalidate>
+          <div class="signup-row">
+            <label class="visually-hidden" for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@garden.com" autocomplete="email" required />
+            <button type="submit" class="btn btn-seed">Plant your seed</button>
+          </div>
+          <p class="signup-note">No noise, no spam — just field notes. Unsubscribe anytime.</p>
+          <p class="signup-success" id="signupSuccess" role="status" hidden>
+            🌱 Planted. Watch your inbox for the first field note.
+          </p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#top" class="wordmark wordmark--footer">
+          <span class="wordmark-rise">Rise</span><span class="wordmark-amp">&amp;</span><span class="wordmark-bloom">Bloom</span>
+        </a>
+        <p class="footer-tagline">Botany · Art · Education</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#lessons">Lessons</a>
+        <a href="#printshop">Print shop</a>
+        <a href="#greenhouse">Newsletter</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </nav>
+      <p class="footer-copy">© 2026 Rise &amp; Bloom</p>
+    </div>
+  </footer>
+
+  <!-- Shared seal mark used inline -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <g id="seal-mark" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="20" cy="20" r="17"/>
+        <path d="M20,30 C19,23 21,16 20,10"/>
+        <path d="M20,16 C14,14 11,10 11,10 C11,10 16,11 20,16 Z" fill="currentColor" stroke="none"/>
+        <path d="M20,16 C26,14 29,10 29,10 C29,10 24,11 20,16 Z" fill="currentColor" stroke="none"/>
+      </g>
+    </defs>
+  </svg>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
