@@ -293,6 +293,14 @@ a { color: inherit; text-decoration: none; }
 }
 .lesson-link span { display: inline-block; transition: transform 0.3s var(--ease); }
 .lesson-link:hover span { transform: translateX(5px); }
+.lesson-soon {
+  margin-top: auto; padding-top: 0.9rem;
+  font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--sepia); font-style: italic; opacity: 0.75;
+}
+.lesson-soon::before {
+  content: "✦"; font-style: normal; color: var(--gold); margin-right: 0.5em;
+}
 
 /* ── Print shop ── */
 .section--shop { background: var(--paper-2); max-width: none; }
