@@ -25,6 +25,7 @@
         <a href="#lessons">Lessons</a>
         <a href="#printshop">Print shop</a>
         <a href="#about">About</a>
+        <a href="#contact">Contact</a>
         <a href="#greenhouse" class="nav-cta">Greenhouse</a>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
@@ -343,6 +344,48 @@
       </div>
     </section>
 
+    <!-- ═══════════════════ GET IN TOUCH ═══════════════════ -->
+    <section class="section section--contact" id="contact">
+      <div class="contact-inner reveal">
+        <p class="eyebrow">Get in Touch</p>
+        <h2 class="section-title">Write to the <em>studio.</em></h2>
+        <p class="section-lede">
+          A question, a commission, a collaboration — or simply a kind word. The studio
+          door is open, and every note gets an unhurried reply.
+        </p>
+
+        <!--
+          Delivery: this form POSTs to a Formspree endpoint that forwards each message to
+          the studio inbox. The destination email lives in the Formspree dashboard — never
+          in this page's code. To activate: create a free form at https://formspree.io,
+          point it at the studio inbox, and replace REPLACE_WITH_FORM_ID below with the ID.
+        -->
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/REPLACE_WITH_FORM_ID" method="POST" novalidate>
+          <div class="contact-row">
+            <div class="contact-field">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" required />
+            </div>
+            <div class="contact-field">
+              <label for="cf-email">Your email</label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" required />
+            </div>
+          </div>
+          <div class="contact-field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" placeholder="Tell us what's growing…" required></textarea>
+          </div>
+          <input type="hidden" name="_subject" value="New note from the Rise &amp; Bloom site" />
+          <!-- honeypot: bots fill this; humans never see it -->
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0" />
+          <div class="contact-actions">
+            <button type="submit" class="btn btn-primary">Send a note</button>
+          </div>
+          <p class="contact-status" id="contactStatus" role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+    </section>
+
     <!-- ═══════════════════ THE GREENHOUSE ═══════════════════ -->
     <section class="section section--greenhouse" id="greenhouse">
       <div class="greenhouse-panel reveal">
@@ -385,6 +428,7 @@
         <a href="#lessons">Lessons</a>
         <a href="#printshop">Print shop</a>
         <a href="#greenhouse">Newsletter</a>
+        <a href="#contact">Get in touch</a>
         <a href="https://www.instagram.com/riseandbloom.jc" target="_blank" rel="noopener noreferrer">Instagram</a>
       </nav>
       <p class="footer-copy">© 2026 Rise &amp; Bloom</p>

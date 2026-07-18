@@ -388,6 +388,54 @@ a { color: inherit; text-decoration: none; }
 .signup-note { margin: 1rem 0 0; font-size: 0.85rem; color: rgba(244,238,222,0.6); font-style: italic; }
 .signup-success { margin: 1rem 0 0; font-size: 1.02rem; color: var(--gold); font-family: var(--font-display); font-style: italic; }
 
+/* ═══════════════════ GET IN TOUCH ═══════════════════ */
+.section--contact { text-align: center; }
+.contact-inner { max-width: 640px; margin: 0 auto; }
+.section--contact .eyebrow { display: inline-block; }
+.section--contact .section-lede {
+  max-width: 48ch; margin: 0 auto; text-align: center;
+}
+.contact-form {
+  margin-top: clamp(2rem, 4vw, 2.8rem); text-align: left;
+}
+.contact-row { display: flex; gap: 1rem; }
+.contact-field { flex: 1; margin-bottom: 1.1rem; }
+.contact-field label {
+  display: block; margin-bottom: 0.45rem;
+  font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--sepia); font-weight: 600;
+}
+.contact-field input,
+.contact-field textarea {
+  width: 100%; box-sizing: border-box;
+  font-family: var(--font-body); font-size: 1.02rem; color: var(--ink);
+  background: var(--paper-2); border: 1px solid var(--line); border-radius: 2px;
+  padding: 0.75em 0.9em;
+  transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+.contact-field textarea { resize: vertical; min-height: 130px; line-height: 1.6; }
+.contact-field input::placeholder,
+.contact-field textarea::placeholder { color: #9a8b6e; }
+.contact-field input:focus,
+.contact-field textarea:focus {
+  outline: none; border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(165, 129, 58, 0.16);
+}
+.contact-field input[aria-invalid="true"],
+.contact-field textarea[aria-invalid="true"] { border-color: var(--rust); }
+.contact-actions { text-align: center; margin-top: 0.6rem; }
+.contact-status {
+  margin: 1.1rem 0 0; text-align: center;
+  font-family: var(--font-display); font-style: italic; font-size: 1.05rem;
+}
+.contact-status.is-success { color: var(--forest); }
+.contact-status.is-error { color: var(--rust); font-style: normal; font-family: var(--font-body); font-size: 0.95rem; }
+
+@media (max-width: 560px) {
+  .contact-row { flex-direction: column; gap: 0; }
+  .contact-actions .btn { width: 100%; }
+}
+
 /* ═══════════════════ FOOTER ═══════════════════ */
 .site-footer { border-top: 1px solid var(--line); background: var(--paper-2); }
 .footer-inner {

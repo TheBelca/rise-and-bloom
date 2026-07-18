@@ -50,6 +50,47 @@
     reveals.forEach((el) => el.classList.add("is-visible"));
   }
 
+  /* ── Get in touch (contact form) ── */
+  const contactForm = document.getElementById("contactForm");
+  if (contactForm) {
+    const status = document.getElementById("contactStatus");
+    const setStatus = (msg, kind) => {
+      status.hidden = false;
+      status.textContent = msg;
+      status.className = "contact-status " + (kind === "ok" ? "is-success" : "is-error");
+    };
+    contactForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const endpoint = contactForm.getAttribute("action") || "";
+      if (endpoint.indexOf("REPLACE_WITH_FORM_ID") !== -1) {
+        setStatus("This form isn't connected yet — add your Formspree ID to enable it.", "err");
+        return;
+      }
+      const btn = contactForm.querySelector("button[type=submit]");
+      const original = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = "Sending…";
+      try {
+        const res = await fetch(endpoint, {
+          method: "POST",
+          body: new FormData(contactForm),
+          headers: { Accept: "application/json" },
+        });
+        if (res.ok) {
+          contactForm.reset();
+          setStatus("🌿 Thank you — your note is on its way. We'll reply soon.", "ok");
+        } else {
+          setStatus("Something went wrong sending that. Please try again in a moment.", "err");
+        }
+      } catch (err) {
+        setStatus("Couldn't reach the server. Please check your connection and try again.", "err");
+      } finally {
+        btn.disabled = false;
+        btn.textContent = original;
+      }
+    });
+  }
+
   /* ── Newsletter signup ── */
   const form = document.getElementById("signupForm");
   const success = document.getElementById("signupSuccess");
